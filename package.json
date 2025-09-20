@@ -6,6 +6,13 @@
     "example",
     "typescript"
   ],
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
   "homepage": "https://github.com/destocot/how-to-create-an-npm-package",
   "bugs": {
     "url": "https://github.com/destocot/how-to-create-an-npm-package/issues"
@@ -20,7 +27,6 @@
     "dist"
   ],
   "type": "module",
-  "main": "dist/index.js",
   "devDependencies": {
     "@changesets/cli": "^2.29.7",
     "prettier": "^3.6.2",
